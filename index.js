@@ -22,4 +22,11 @@ const course = new Course ({
 const result = await course.save()
 console.log(result);
 }
-createCourse();
+
+async function getCouse(){
+    const courses = await Course.find({})
+    .limit(3)
+    .sort({name : -1})
+    console.log(courses);
+}
+getCouse();
