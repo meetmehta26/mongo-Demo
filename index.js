@@ -24,7 +24,7 @@ console.log(result);
 }
 
 async function getCouse(){
-    const courses = await Course.find({})
+    const courses = await Course.find({author : /^meet/i})
     .limit(3)
     .sort({name : -1})
     console.log(courses);
