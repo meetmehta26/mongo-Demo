@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/meetmehta26/mongo-Demo/issues"
   },
-  "homepage": "https://github.com/meetmehta26/mongo-Demo#readme"
+  "homepage": "https://github.com/meetmehta26/mongo-Demo#readme",
+  "dependencies": {
+    "mongoose": "^5.10.2"
+  }
 }
