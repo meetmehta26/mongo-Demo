@@ -18,9 +18,12 @@ const CourseSchema = new mongoose.Schema({
 const Course = mongoose.model('Course', CourseSchema)
 
 async function getData() {
-    const result = await Course.find({ isPublished: true, tags: 'backend' })
+    const result1 = await Course.find({ 
+        $and:[{ tags: 'node' },{author:'Jack'}] //{tags:'frontend'}]
+
+    })
         .select({ name: 1, author: 1, _id: 0 })
         .sort({ price: -1 })
-    console.log(result);
+    console.log(result1);
 }
 getData();
