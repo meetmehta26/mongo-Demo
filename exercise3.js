@@ -15,12 +15,12 @@ let CoursesSchema = new mongoose.Schema({
 
 })
 
-let Courses= mongoose.model('Course',CoursesSchema);
+let Courses = mongoose.model('Course', CoursesSchema);
 
-async function getData(){
-    const result1 = await Courses.find( )//{tags:'frontend'}]})
-.or([{price : {$gte : 15}},{name : /.*by/}])
-        .select({ name: 1, author: 1, price:1,_id: 0 })
+async function getData() {
+    const result1 = await Courses.find()//{tags:'frontend'}]})
+        .or([{ price: { $gte: 15 } }, { name: /.*by/ }])
+        .select({ name: 1, author: 1, price: 1, _id: 0 })
         .sort({ price: -1 })
     console.log(result1);
 
