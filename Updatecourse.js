@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/mongo-exercises')
-    .then('Connected Succesfully')
-    .catch('Error occured while connecting');
+    .then(()=>{console.log('Connected Succesfully');})
+    .catch(()=>{console.log('Errro occured');});
 
 
 const CourseSchema = mongoose.Schema({
@@ -36,7 +36,7 @@ async function UpdateByQuery(id) {
 }
 
 
-// UpdateByQuery('5f528ccf53e0d431a8983eff');
+UpdateByQuery('5f528ccf53e0d431a8983eff');
 
 async function UpdateDirectly(id) {
     result = await Courses.update({ _id: id }, {
@@ -47,4 +47,4 @@ async function UpdateDirectly(id) {
     console.log(result)
 }
 
-UpdateDirectly('5f528ccf53e0d431a8983eff');
+// UpdateDirectly('5f528ccf53e0d431a8983eff');
