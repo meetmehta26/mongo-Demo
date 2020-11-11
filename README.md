@@ -17,4 +17,4 @@ npm install
 2. Write `npm start` and press the Enter.
 
 ## MAINTAINERS
-[`Rohit`]: https://github.com/imrohit7604/
+Rohit: https://github.com/imrohit7604/
