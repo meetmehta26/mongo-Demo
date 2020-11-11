@@ -13,7 +13,8 @@ npm install
 
 
 ## Operating Instructions
-Open the CMD from the folder where you project is saved write `npm start` and press the Enter.
+1. Open the CMD from the folder where you project is saved
+2. Write `npm start` and press the Enter.
 
 ## MAINTAINERS
 [`Rohit`]: https://github.com/imrohit7604/
