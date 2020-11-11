@@ -3,7 +3,6 @@ This is the backend of Parking Management Website which is written in Node.js an
 
 ## Requirements
 1) Nodejs v14.10.1
-2) React v17.0.1
 
 ## Installation
 ```bash
