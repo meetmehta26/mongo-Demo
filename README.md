@@ -22,7 +22,7 @@ Rohit: https://github.com/imrohit7604/
 This is the frontend of Parking Management Website which is written in React.js. As name explains it helps in management of Car parking through which Booking Counter Agent or Parking Zone Assistant can manage/look into the vacant parking space or occupied space with the car registration number.
 
 ## Requirements
-1) React v17.10.1
+1) React v17.0.1
 
 ## Installation
 1. Open the CMD from the folder where you project is saved
